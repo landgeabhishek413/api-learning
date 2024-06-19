@@ -49,4 +49,4 @@ def index1():
     return render_template('movie.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000)
