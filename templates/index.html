@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer API Showcase: Movies and News Fetcher</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .code-block {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Developer API Showcase: Movies and News Fetcher</h1>
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/img.png') }}" alt="Developer using the application">
+        </div>
+
+        <div class="project">
+            <h2>Project 1: Random Movie Fetcher</h2>
+            <p>This project demonstrates how to fetch a random movie using The Movie Database (TMDb) API. By making an API request to the TMDb service, we can retrieve a list of popular movies and display a random selection from that list.</p>
+            <p>To Access the Movie Application</p>
+            <div class="code-block">
+                <pre><code>
+site-path/movie     ## replace with your actual path. example(http://127.0.0.1:5000/movie)
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="project">
+            <h2>Project 2: News Fetcher</h2>
+            <p>This project shows how to fetch news articles related to a user-provided query using the NewsAPI. By entering a query and submitting the form, an API request is made to NewsAPI to fetch relevant news articles, which are then displayed on the page.</p>
+            <p>To Access the NEWS Application</p>
+            <div class="code-block">
+                <pre><code>
+site-path/news    ## replace with your actual path . example(http://127.0.0.1:5000/news)
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
